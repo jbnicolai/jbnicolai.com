@@ -11,13 +11,9 @@ var _ = require('underscore');
 //   fonts: fonts
 
 function loadConfig(path) {
-  var object = {};
-
-  require('glob').sync('*', {cwd: path}).forEach(function (option) {
-    object[option.replace(/\.js$/, '')] = require('./' + path + option);
-  });
-
-  return object;
+  return _.object( _.map(require('glob').sync('*', {cwd: path}), function (option) {
+    return [option.replace(/\.js$/, ''), require('./' + path + option)];
+  }));
 }
 
 module.exports = function (grunt) {
