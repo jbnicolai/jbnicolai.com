@@ -83,6 +83,8 @@ module.exports = function (grunt) {
     'buildcontrol'
     ]);
 
+  grunt.registerTask('tasks', ['availabletasks']);
+
   grunt.registerTask('default', [
     'check',
     'test',
