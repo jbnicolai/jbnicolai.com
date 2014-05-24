@@ -39,17 +39,6 @@ module.exports = function (grunt) {
     // Usemin adds files to uglify
     uglify: {},
     // Usemin adds files to cssmin
-    csslint: {
-      options: {
-        csslintrc: '.csslintrc'
-      },
-      check: {
-        src: [
-          '<%= yeoman.app %>/css/**/*.css',
-          '<%= yeoman.app %>/_scss/**/*.scss'
-        ]
-      }
-    },
     concurrent: {
       server: [
         'sass:server',
