@@ -1,6 +1,8 @@
 // Generated on 2014-05-24 using generator-jekyllrb 1.2.1
 'use strict';
 
+var _ = require('underscore');
+
 // Directory reference:
 //   css: css
 //   sass: _scss
@@ -8,13 +10,25 @@
 //   images: img
 //   fonts: fonts
 
+function loadConfig(path) {
+  var object = {};
+
+  require('glob').sync('*', {cwd: path}).forEach(function (option) {
+    object[option.replace(/\.js$/, '')] = require('./' + path + option);
+  });
+
+  return object;
+}
+
 module.exports = function (grunt) {
+  require('load-grunt-tasks')(grunt);
+
   // Show elapsed time after tasks run
   require('time-grunt')(grunt);
   // Load all Grunt tasks
   require('load-grunt-tasks')(grunt);
 
-  grunt.initConfig({
+  grunt.initConfig(_.extend(loadConfig('grunt/config/'), {
     // Configurable paths
     yeoman: {
       app: 'app',
@@ -331,7 +345,7 @@ module.exports = function (grunt) {
         'copy:dist'
       ]
     }
-  });
+  }));
 
   // Define Tasks
   grunt.registerTask('serve', function (target) {

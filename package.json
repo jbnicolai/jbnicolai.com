@@ -10,6 +10,7 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "glob": "^4.0.0",
     "grunt": "~0.4.1",
     "grunt-autoprefixer": "~0.6.4",
     "grunt-build-control": "~0.1.2",
@@ -32,7 +33,8 @@
     "grunt-usemin": "~2.0.0",
     "jshint-stylish": "~0.1.3",
     "load-grunt-tasks": "~0.2.0",
-    "time-grunt": "~0.2.8"
+    "time-grunt": "~0.2.8",
+    "underscore": "^1.6.0"
   },
   "engines": {
     "node": ">=0.8.0"
