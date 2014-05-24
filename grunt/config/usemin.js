@@ -1,7 +1,7 @@
 module.exports = {
   options: {
-    assetsDirs: '<%= constants.distDir %>',
+    assetsDirs: '<%= paths.dist %>',
   },
-  html: ['<%= constants.distDir %>/**/*.html'],
-  css: ['<%= constants.distDir %>/css/**/*.css']
+  html: ['<%= paths.dist %>/**/*.html'],
+  css: ['<%= paths.dist %>/css/**/*.css']
 };

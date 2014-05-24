@@ -5,7 +5,7 @@ module.exports = {
   },
   all: [
     'Gruntfile.js',
-    '<%= constants.appDir %>/js/**/*.js',
+    '<%= paths.app %>/js/**/*.js',
     'test/spec/**/*.js'
   ]
 };

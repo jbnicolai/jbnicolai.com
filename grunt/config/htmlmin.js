@@ -8,9 +8,9 @@ module.exports = {
     },
     files: [{
       expand: true,
-      cwd: '<%= constants.distDir %>',
+      cwd: '<%= paths.dist %>',
       src: '**/*.html',
-      dest: '<%= constants.distDir %>'
+      dest: '<%= paths.dist %>'
     }]
   }
 };

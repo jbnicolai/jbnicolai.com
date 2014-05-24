@@ -5,10 +5,10 @@ module.exports = {
   dist: {
     files: [{
       src: [
-        '<%= constants.distDir %>/js/**/*.js',
-        '<%= constants.distDir %>/css/**/*.css',
-        '<%= constants.distDir %>/img/**/*.{gif,jpg,jpeg,png,svg,webp}',
-        '<%= constants.distDir %>/fonts/**/*.{eot*,otf,svg,ttf,woff}'
+        '<%= paths.dist %>/js/**/*.js',
+        '<%= paths.dist %>/css/**/*.css',
+        '<%= paths.dist %>/img/**/*.{gif,jpg,jpeg,png,svg,webp}',
+        '<%= paths.dist %>/fonts/**/*.{eot*,otf,svg,ttf,woff}'
       ]
     }]
   }

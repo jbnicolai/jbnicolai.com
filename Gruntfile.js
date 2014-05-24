@@ -3,6 +3,13 @@
 
 var _ = require('underscore');
 
+var constants  = {
+  paths: {
+    app: 'app',
+    dist: 'dist'
+  }
+};
+
 // Directory reference:
 //   css: css
 //   sass: _scss
@@ -22,13 +29,7 @@ module.exports = function (grunt) {
   // Load all Grunt tasks
   require('load-grunt-tasks')(grunt);
 
-  grunt.initConfig(_.extend(loadConfig('grunt/config/'), {
-    // Configurable paths
-    constants: {
-      appDir: 'app',
-      distDir: 'dist'
-    }
-  }));
+  grunt.initConfig(_.extend(loadConfig('grunt/config/'), constants));
 
   // Define Tasks
   grunt.registerTask('serve', function (target) {

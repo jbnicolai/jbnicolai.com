@@ -2,11 +2,11 @@ module.exports = {
   options: {
     bundleExec: true,
     config: '_config.yml,_config.build.yml',
-    src: '<%= constants.appDir %>'
+    src: '<%= paths.app %>'
   },
   dist: {
     options: {
-      dest: '<%= constants.distDir %>',
+      dest: '<%= paths.dist %>',
     }
   },
   server: {

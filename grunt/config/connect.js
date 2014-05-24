@@ -11,7 +11,7 @@ module.exports =  {
       base: [
         '.tmp',
         '.jekyll',
-        '<%= constants.appDir %>'
+        '<%= paths.app %>'
       ]
     }
   },
@@ -19,7 +19,7 @@ module.exports =  {
     options: {
       open: true,
       base: [
-        '<%= constants.distDir %>'
+        '<%= paths.dist %>'
       ]
     }
   },
@@ -29,7 +29,7 @@ module.exports =  {
         '.tmp',
         '.jekyll',
         'test',
-        '<%= constants.appDir %>'
+        '<%= paths.app %>'
       ]
     }
   }

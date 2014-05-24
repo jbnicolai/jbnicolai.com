@@ -4,8 +4,8 @@ module.exports = {
   },
   check: {
     src: [
-      '<%= constants.appDir %>/css/**/*.css',
-      '<%= constants.appDir %>/_scss/**/*.scss'
+      '<%= paths.app %>/css/**/*.css',
+      '<%= paths.app %>/_scss/**/*.scss'
     ]
   }
 };

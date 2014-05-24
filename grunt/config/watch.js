@@ -1,16 +1,16 @@
 module.exports = {
   sass: {
-    files: ['<%= constants.appDir %>/_scss/**/*.{scss,sass}'],
+    files: ['<%= paths.app %>/_scss/**/*.{scss,sass}'],
     tasks: ['sass:server', 'autoprefixer:server']
   },
   autoprefixer: {
-    files: ['<%= constants.appDir %>/css/**/*.css'],
+    files: ['<%= paths.app %>/css/**/*.css'],
     tasks: ['copy:stagecss', 'autoprefixer:server']
   },
   jekyll: {
     files: [
-      '<%= constants.appDir %>/**/*.{html,yml,md,mkd,markdown}',
-      '!<%= constants.appDir %>/_bower_components/**/*'
+      '<%= paths.app %>/**/*.{html,yml,md,mkd,markdown}',
+      '!<%= paths.app %>/_bower_components/**/*'
     ],
     tasks: ['jekyll:server']
   },
@@ -21,8 +21,8 @@ module.exports = {
     files: [
       '.jekyll/**/*.html',
       '.tmp/css/**/*.css',
-      '{.tmp,<%= constants.appDir %>}/<%= js %>/**/*.js',
-      '<%= constants.appDir %>/img/**/*.{gif,jpg,jpeg,png,svg,webp}'
+      '{.tmp,<%= paths.app %>}/<%= js %>/**/*.js',
+      '<%= paths.app %>/img/**/*.{gif,jpg,jpeg,png,svg,webp}'
     ]
   }
 };

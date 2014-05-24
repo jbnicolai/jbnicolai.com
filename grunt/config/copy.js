@@ -3,7 +3,7 @@ module.exports = {
     files: [{
       expand: true,
       dot: true,
-      cwd: '<%= constants.appDir %>',
+      cwd: '<%= paths.app %>',
       src: [
         // Jekyll processes and moves HTML and text files.
         // Usemin moves CSS and javascript inside of Usemin blocks.
@@ -17,7 +17,7 @@ module.exports = {
         //'favicon.ico',
         //'apple-touch*.png'
       ],
-      dest: '<%= constants.distDir %>'
+      dest: '<%= paths.dist %>'
     }]
   },
   // Copy CSS into .tmp directory for Autoprefixer processing
@@ -25,7 +25,7 @@ module.exports = {
     files: [{
       expand: true,
       dot: true,
-      cwd: '<%= constants.appDir %>/css',
+      cwd: '<%= paths.app %>/css',
       src: '**/*.css',
       dest: '.tmp/css'
     }]

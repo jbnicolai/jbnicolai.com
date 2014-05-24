@@ -1,6 +1,6 @@
 module.exports = {
   options: {
-    dest: '<%= constants.distDir %>'
+    dest: '<%= paths.dist %>'
   },
-  html: '<%= constants.distDir %>/index.html'
+  html: '<%= paths.dist %>/index.html'
 };
