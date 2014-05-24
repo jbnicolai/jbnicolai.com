@@ -34,12 +34,6 @@ module.exports = function (grunt) {
       app: 'app',
       dist: 'dist'
     },
-    useminPrepare: {
-      options: {
-        dest: '<%= yeoman.dist %>'
-      },
-      html: '<%= yeoman.dist %>/index.html'
-    },
     usemin: {
       options: {
         assetsDirs: '<%= yeoman.dist %>',
