@@ -33,9 +33,7 @@ module.exports = function (grunt) {
     yeoman: {
       app: 'app',
       dist: 'dist'
-    },
-    // Usemin adds files to uglify
-    uglify: {}
+    }
   }));
 
   // Define Tasks
