@@ -24,20 +24,7 @@ module.exports = function (grunt) {
   // Loadall Grunt config files
   grunt.initConfig(_.extend(loadConfig('grunt/config/'), constants));
 
-  // Define Tasks
-  grunt.registerTask('serve', function (target) {
-    if (target === 'dist') {
-      return grunt.task.run(['build', 'connect:dist:keepalive']);
-    }
-
-    grunt.task.run([
-      'clean:server',
-      'concurrent:server',
-      'autoprefixer:server',
-      'connect:livereload',
-      'watch'
-    ]);
-  });
+  grunt.loadTasks('grunt/tasks');
 
   grunt.registerTask('check', [
     'clean:server',
