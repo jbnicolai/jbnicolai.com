@@ -34,8 +34,6 @@ module.exports = function (grunt) {
       app: 'app',
       dist: 'dist'
     },
-    // Usemin adds files to concat
-    concat: {},
     // Usemin adds files to uglify
     uglify: {}
   }));
