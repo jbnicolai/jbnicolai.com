@@ -34,50 +34,6 @@ module.exports = function (grunt) {
       app: 'app',
       dist: 'dist'
     },
-    autoprefixer: {
-      options: {
-        browsers: ['last 2 versions']
-      },
-      dist: {
-        files: [{
-          expand: true,
-          cwd: '<%= yeoman.dist %>/css',
-          src: '**/*.css',
-          dest: '<%= yeoman.dist %>/css'
-        }]
-      },
-      server: {
-        files: [{
-          expand: true,
-          cwd: '.tmp/css',
-          src: '**/*.css',
-          dest: '.tmp/css'
-        }]
-      }
-    },
-    jekyll: {
-      options: {
-        bundleExec: true,
-        config: '_config.yml,_config.build.yml',
-        src: '<%= yeoman.app %>'
-      },
-      dist: {
-        options: {
-          dest: '<%= yeoman.dist %>',
-        }
-      },
-      server: {
-        options: {
-          config: '_config.yml',
-          dest: '.jekyll'
-        }
-      },
-      check: {
-        options: {
-          doctor: true
-        }
-      }
-    },
     useminPrepare: {
       options: {
         dest: '<%= yeoman.dist %>'
