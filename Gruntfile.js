@@ -10,13 +10,6 @@ var constants  = {
   }
 };
 
-// Directory reference:
-//   css: css
-//   sass: _scss
-//   javascript: js
-//   images: img
-//   fonts: fonts
-
 function loadConfig(path) {
   return _.object( _.map(require('glob').sync('*', {cwd: path}), function (option) {
     return [option.replace(/\.js$/, ''), require('./' + path + option)];
@@ -28,7 +21,7 @@ module.exports = function (grunt) {
   require('time-grunt')(grunt);
   // Load all Grunt tasks
   require('load-grunt-tasks')(grunt);
-
+  // Loadall Grunt config files
   grunt.initConfig(_.extend(loadConfig('grunt/config/'), constants));
 
   // Define Tasks
