@@ -2,11 +2,11 @@ module.exports = {
   options: {
     bundleExec: true,
     config: '_config.yml,_config.build.yml',
-    src: '<%= yeoman.app %>'
+    src: '<%= constants.appDir %>'
   },
   dist: {
     options: {
-      dest: '<%= yeoman.dist %>',
+      dest: '<%= constants.distDir %>',
     }
   },
   server: {

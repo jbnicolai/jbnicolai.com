@@ -5,9 +5,9 @@ module.exports = {
   dist: {
     files: [{
       expand: true,
-      cwd: '<%= yeoman.dist %>/css',
+      cwd: '<%= constants.distDir %>/css',
       src: '**/*.css',
-      dest: '<%= yeoman.dist %>/css'
+      dest: '<%= constants.distDir %>/css'
     }]
   },
   server: {

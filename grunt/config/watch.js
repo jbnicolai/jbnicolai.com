@@ -1,16 +1,16 @@
 module.exports = {
   sass: {
-    files: ['<%= yeoman.app %>/_scss/**/*.{scss,sass}'],
+    files: ['<%= constants.appDir %>/_scss/**/*.{scss,sass}'],
     tasks: ['sass:server', 'autoprefixer:server']
   },
   autoprefixer: {
-    files: ['<%= yeoman.app %>/css/**/*.css'],
+    files: ['<%= constants.appDir %>/css/**/*.css'],
     tasks: ['copy:stagecss', 'autoprefixer:server']
   },
   jekyll: {
     files: [
-      '<%= yeoman.app %>/**/*.{html,yml,md,mkd,markdown}',
-      '!<%= yeoman.app %>/_bower_components/**/*'
+      '<%= constants.appDir %>/**/*.{html,yml,md,mkd,markdown}',
+      '!<%= constants.appDir %>/_bower_components/**/*'
     ],
     tasks: ['jekyll:server']
   },
@@ -21,8 +21,8 @@ module.exports = {
     files: [
       '.jekyll/**/*.html',
       '.tmp/css/**/*.css',
-      '{.tmp,<%= yeoman.app %>}/<%= js %>/**/*.js',
-      '<%= yeoman.app %>/img/**/*.{gif,jpg,jpeg,png,svg,webp}'
+      '{.tmp,<%= constants.appDir %>}/<%= js %>/**/*.js',
+      '<%= constants.appDir %>/img/**/*.{gif,jpg,jpeg,png,svg,webp}'
     ]
   }
 };

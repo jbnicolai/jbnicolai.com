@@ -8,9 +8,9 @@ module.exports = {
     },
     files: [{
       expand: true,
-      cwd: '<%= yeoman.dist %>',
+      cwd: '<%= constants.distDir %>',
       src: '**/*.html',
-      dest: '<%= yeoman.dist %>'
+      dest: '<%= constants.distDir %>'
     }]
   }
 };

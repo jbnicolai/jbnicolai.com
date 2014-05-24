@@ -5,9 +5,9 @@ module.exports = {
     },
     files: [{
       expand: true,
-      cwd: '<%= yeoman.dist %>',
+      cwd: '<%= constants.distDir %>',
       src: '**/*.{jpg,jpeg,png}',
-      dest: '<%= yeoman.dist %>'
+      dest: '<%= constants.distDir %>'
     }]
   }
 };

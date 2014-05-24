@@ -11,7 +11,7 @@ module.exports =  {
       base: [
         '.tmp',
         '.jekyll',
-        '<%= yeoman.app %>'
+        '<%= constants.appDir %>'
       ]
     }
   },
@@ -19,7 +19,7 @@ module.exports =  {
     options: {
       open: true,
       base: [
-        '<%= yeoman.dist %>'
+        '<%= constants.distDir %>'
       ]
     }
   },
@@ -29,7 +29,7 @@ module.exports =  {
         '.tmp',
         '.jekyll',
         'test',
-        '<%= yeoman.app %>'
+        '<%= constants.appDir %>'
       ]
     }
   }

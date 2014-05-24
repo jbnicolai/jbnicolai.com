@@ -1,6 +1,6 @@
 module.exports = {
   options: {
-    dest: '<%= yeoman.dist %>'
+    dest: '<%= constants.distDir %>'
   },
-  html: '<%= yeoman.dist %>/index.html'
+  html: '<%= constants.distDir %>/index.html'
 };

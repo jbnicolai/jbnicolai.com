@@ -4,7 +4,7 @@ module.exports = {
       },
       check: {
         src: [
-          '<%= yeoman.app %>/css/**/*.css',
-          '<%= yeoman.app %>/_scss/**/*.scss'
+          '<%= constants.appDir %>/css/**/*.css',
+          '<%= constants.appDir %>/_scss/**/*.scss'
         ]
       }

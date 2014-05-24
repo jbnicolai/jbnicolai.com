@@ -8,7 +8,7 @@ module.exports = {
   dist: {
     files: [{
       expand: true,
-      cwd: '<%= yeoman.app %>/_scss',
+      cwd: '<%= constants.appDir %>/_scss',
       src: '**/*.{scss,sass}',
       dest: '.tmp/css',
       ext: '.css'
@@ -21,7 +21,7 @@ module.exports = {
     },
     files: [{
       expand: true,
-      cwd: '<%= yeoman.app %>/_scss',
+      cwd: '<%= constants.appDir %>/_scss',
       src: '**/*.{scss,sass}',
       dest: '.tmp/css',
       ext: '.css'

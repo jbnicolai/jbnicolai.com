@@ -30,9 +30,9 @@ module.exports = function (grunt) {
 
   grunt.initConfig(_.extend(loadConfig('grunt/config/'), {
     // Configurable paths
-    yeoman: {
-      app: 'app',
-      dist: 'dist'
+    constants: {
+      appDir: 'app',
+      distDir: 'dist'
     }
   }));
 
