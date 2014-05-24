@@ -1,8 +1,13 @@
 {
-  "name": "yeoman-jekyll",
+  "name": "Blog",
   "private": true,
   "version": "0.0.0",
-  "description": "Yeoman workflow for yeoman-jekyll",
+  "description": "Personal blog",
+  "author": {
+    "name": "Joshua Boy Nicolai Appelman",
+    "email": "me@jbnicolai.com",
+    "url": "http://jbnicolai.com"
+  },
   "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4.1",
