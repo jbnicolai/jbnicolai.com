@@ -39,16 +39,6 @@ module.exports = function (grunt) {
     // Usemin adds files to uglify
     uglify: {},
     // Usemin adds files to cssmin
-    buildcontrol: {
-      dist: {
-        options: {
-          remote: '../',
-          branch: 'gh-pages',
-          commit: true,
-          push: true
-        }
-      }
-    },
     jshint: {
       options: {
         jshintrc: '.jshintrc',
