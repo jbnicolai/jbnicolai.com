@@ -17,8 +17,6 @@ function loadConfig(path) {
 }
 
 module.exports = function (grunt) {
-  require('load-grunt-tasks')(grunt);
-
   // Show elapsed time after tasks run
   require('time-grunt')(grunt);
   // Load all Grunt tasks
