@@ -34,22 +34,6 @@ module.exports = function (grunt) {
       app: 'app',
       dist: 'dist'
     },
-    htmlmin: {
-      dist: {
-        options: {
-          collapseWhitespace: true,
-          collapseBooleanAttributes: true,
-          removeAttributeQuotes: true,
-          removeRedundantAttributes: true
-        },
-        files: [{
-          expand: true,
-          cwd: '<%= yeoman.dist %>',
-          src: '**/*.html',
-          dest: '<%= yeoman.dist %>'
-        }]
-      }
-    },
     // Usemin adds files to concat
     concat: {},
     // Usemin adds files to uglify
