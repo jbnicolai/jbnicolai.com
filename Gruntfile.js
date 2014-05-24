@@ -26,14 +26,6 @@ module.exports = function (grunt) {
 
   grunt.loadTasks('grunt/tasks');
 
-  grunt.registerTask('check', [
-    'clean:server',
-    'jekyll:check',
-    'sass:server',
-    'jshint:all',
-    'csslint:check'
-  ]);
-
   grunt.registerTask('build', [
     'clean',
     // Jekyll cleans files from the target directory, so must run first
