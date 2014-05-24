@@ -25,11 +25,4 @@ module.exports = function (grunt) {
   grunt.initConfig(_.extend(loadConfig('grunt/config/'), constants));
 
   grunt.loadTasks('grunt/tasks');
-
-  grunt.registerTask('tasks', ['availabletasks']);
-
-  grunt.registerTask('default', [
-    'check',
-    'build'
-  ]);
 };
