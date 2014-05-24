@@ -37,19 +37,7 @@ module.exports = function (grunt) {
     // Usemin adds files to concat
     concat: {},
     // Usemin adds files to uglify
-    uglify: {},
-    // Usemin adds files to cssmin
-    concurrent: {
-      server: [
-        'sass:server',
-        'copy:stageCss',
-        'jekyll:server'
-      ],
-      dist: [
-        'sass:dist',
-        'copy:dist'
-      ]
-    }
+    uglify: {}
   }));
 
   // Define Tasks
