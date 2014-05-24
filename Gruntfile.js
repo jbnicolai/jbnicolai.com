@@ -26,12 +26,6 @@ module.exports = function (grunt) {
 
   grunt.loadTasks('grunt/tasks');
 
-  grunt.registerTask('deploy', [
-    'check',
-    'build',
-    'buildcontrol'
-    ]);
-
   grunt.registerTask('tasks', ['availabletasks']);
 
   grunt.registerTask('default', [
