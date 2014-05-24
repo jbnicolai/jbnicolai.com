@@ -39,16 +39,6 @@ module.exports = function (grunt) {
     // Usemin adds files to uglify
     uglify: {},
     // Usemin adds files to cssmin
-    svgmin: {
-      dist: {
-        files: [{
-          expand: true,
-          cwd: '<%= yeoman.dist %>',
-          src: '**/*.svg',
-          dest: '<%= yeoman.dist %>'
-        }]
-      }
-    },
     copy: {
       dist: {
         files: [{
