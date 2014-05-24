@@ -1,0 +1,6 @@
+.jekyll/
+.sass-cache/
+.tmp/
+app/_bower_components
+dist/
+node_modules/
