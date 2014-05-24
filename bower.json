@@ -1,0 +1,12 @@
+{
+  "name": "Blog",
+  "version": "0.0.0",
+  "description": "Personal blog",
+  "author": {
+    "name": "Joshua Boy Nicolai Appelman",
+    "email": "me@jbnicolai.com",
+    "url": "http://jbnicolai.com"
+  },
+  "dependencies": [
+  ]
+}
