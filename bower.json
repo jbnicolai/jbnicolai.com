@@ -7,6 +7,7 @@
     "email": "me@jbnicolai.com",
     "url": "http://jbnicolai.com"
   },
-  "dependencies": [
-  ]
+  "dependencies": {
+    "bootstrap": "~3.1.1"
+  }
 }
