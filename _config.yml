@@ -4,7 +4,9 @@
 # 3. config.yml
 
 name: JBNicolai
-description: Personal site
+description: Musings
+url: http://jbnicolai.com
+
 author:
   name: Joshua Boy Nicolai
   linkedin: jbnicolai
