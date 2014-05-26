@@ -7,6 +7,7 @@ module.exports = {
       src: [
         // Jekyll processes and moves HTML and text files.
         // Usemin moves CSS and javascript inside of Usemin blocks.
+        'css/**/*',
         // Copy moves asset files and directories.
         'img/**/*',
         'fonts/**/*',
