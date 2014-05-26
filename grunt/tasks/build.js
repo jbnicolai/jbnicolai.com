@@ -13,6 +13,7 @@ module.exports = function (grunt) {
     'svgmin',
     'filerev',
     'usemin',
-    'htmlmin'
+    'htmlmin',
+    'favicons'
     ]);
 };
