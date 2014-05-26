@@ -1,7 +1,7 @@
 module.exports = {
   autoprefixer: {
     files: ['<%= paths.app %>/css/**/*.css'],
-    tasks: ['copy:stagecss', 'autoprefixer:server']
+    tasks: ['copy:stageCss', 'autoprefixer:server']
   },
   jekyll: {
     files: [
