@@ -1,5 +1,6 @@
 ---
 layout: default
+title: About Me
 ---
 <header class="text center margin_bottom_medium">
   <h1 class="margin_bottom_medium">{{ page.title }}</h1>
