@@ -5,7 +5,7 @@ title: Home
 {% for post in site.posts %}
   <article class="margin_bottom_big">
     <header class="text center margin_bottom_medium">
-      <h1 class="margin_bottom_medium"><a href="{{ port.url }}">{{ post.title }}</a></h1>
+      <h1 class="margin_bottom_medium"><a href="{{ post.url }}">{{ post.title }}</a></h1>
       <h5 class="text book small uppercase color c_black_light margin_bottom_small"><time datetime="{{ post.date | date_to_rfc822 }}">{{ post.date | date_to_long_string }}</time></h5>
     </header>
 
