@@ -1,8 +1,4 @@
 module.exports = {
-  sass: {
-    files: ['<%= paths.app %>/_scss/**/*.{scss,sass}'],
-    tasks: ['sass:server', 'autoprefixer:server']
-  },
   autoprefixer: {
     files: ['<%= paths.app %>/css/**/*.css'],
     tasks: ['copy:stagecss', 'autoprefixer:server']
