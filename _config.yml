@@ -6,10 +6,12 @@
 name: JBNicolai
 description: Personal site
 author:
-  name: Joshua Boy Nicolai Appelman
+  name: Joshua Boy Nicolai
+  linkedin: jbnicolai
   github: jbnicolai
-  twitter: boynicolai
+  twitter: BoyNicolai
   email: me@jbnicolai.com
+  gravatar: https://secure.gravatar.com/avatar/49b172b279ea0ff79adfad475a45a701.png
 
 # Grunt handles images and assets.
 exclude: ['img', 'css', 'js', 'fonts',
